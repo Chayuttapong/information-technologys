@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าหลัก</title>
+    <link rel="icon" href="img/nnnnnn.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="styles/bortsrp.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="logo">
+            <img src="img/nnnnnn.png" alt="Logo" class="logo-img">
+            <div class="logo-text">
+                <h2>เทคโนโลยีสารสนเทศ</h2>
+                <h1> <a href="#">IT</a></h1>
+                <h3>Information Technology </h3>
+            </div>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul id="menu">
+          <li><a href="index.html">หน้าหลัก</a></li>
+          <li>
+            <a href="หลักสูตร.html">หลักสูตร</a>
+            <ul>
+                <li><a href="Digital.html">หลักสูตรเทคโนโลยีดิจิทัล</a></li>
+                <li><a href="Bisines computer.html">หลักสูตรคอมพิวเตอร์ธุรกิจ</a></li>
+                <li><a href="infomasion IT.html">หลักสูตรเทคโนโลยีสสารสนเทศ</a></li>
+                 
+            </ul>
+        </li>
+          <li><a href="บุคลากร.html">บุคลากร</a></li>
+          <li><a href="ข่าวสาร.html">ข่าวสาร</a></li>
+          <li>
+            <a href="#">เกี่ยวกับเรา</a>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=sLkXaR4uxLA">เพลงประจำวิทยาลัย</a></li>
+                <li><a href="ติดต่อเรา.html">ติดต่อเรา</a></li>
+            </ul>
+        </li>
+        </ul>
+    </nav>
+
+
+<script>
+    // script.js
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.getElementById('menuToggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', function () {
+            menu.classList.toggle('show');
+        });
+    });
+</script>
+
+
+<!-- 3DLOGO -->
+<header class="hero">
+    <div class="contents">
+        <h1>Welcome to Information</h1>
+        <h1>Technology <span class="highlight">(IT)</span> ✍️</h1>
+        <p>Welcome to the website of Teng Technical College Information <br> Technology Department.</p>
+        <div class="buttons">
+            <a href="https://admission.vec.go.th/web/student.htm?mode=init" class="button primary">สมัครเรียน</a>
+        </div>
+    </div>
+    <div class="image-container">
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.5/build/spline-viewer.js"></script>
+        <spline-viewer 
+            url="https://prod.spline.design/7bdYjV4JXfEvaa-H/scene.splinecode">
+        </spline-viewer>
+    </div>
+</header>
+
+
+<div class="heder">
+    <div class="header-content">
+        <h1>INFORMATION TECHNOLOGY</h1>
+        <p>THONG TECHNICAL COLLEGE </p>
+    </div>
+
+</div>
+
+<!-- menu Dowlond -->
+<section class="menu">
+    <div class="menu-item">
+        <a href="หลักสูตร.html"><img src="img/learning.png" alt="Courses"></a>
+        <h2>หลักสูตรที่เปิดสอน</h2>
+        <p>หลักสูตร</p>
+    </div>
+    <div class="menu-item">
+        <a href="ข่าวสาร.html"><img src="img/New.png" alt="News"></a>
+        <h2>ข่าว ของแผนกฯ</h2>
+        <p>ข่าว แผนกเทคโนโลยีสารสนเทศ</p>
+    </div>
+    <div class="menu-item">
+        <a href="ข่าวสาร.html"> <img src="img/New.png" alt="Activities"></a>
+        <h2>กิจกรรม ของแผนกฯ</h2>
+        <p>กิจกรรม แผนกเทคโนโลยีสารสนเทศ</p>
+    </div>
+    <div class="menu-item">
+        <a href="#"><img src="img/dowload.png" alt="Resources"></a>
+        <h2>ดาวโหลดเอกสาร</h2>
+        <p>Download Document</p>
+    </div>
+</section>
+
+
+<!-- หลักสูตรที่เปิดสอน bootstarp -->
+<div class="containerc p-0 mb-5 text-center">
+    <div class="container text-center">
+        <h1 class="text-primary">หลักสูตรที่เปิดสอน</h1>
+    </div>
+
+    <div class="containerc mb-3">
+        <div>
+            <div class="card " style="--clr:gray;">
+                <div class="imgBx bgcourse">
+                    <img src="https://digit.crru.ac.th/DiGiT2024/uploads/courseimage/C-DTB.webp" style="filter: hue-rotate(155deg);" alt="">
+                </div>
+                <div style="position: relative;left: 20px;top: -106px;z-index: 1;">
+                    <!-- <div style="position: fixed;width: 286px;height: 394px;background:red;z-index: 1;"></div> -->
+                    <img src="img/บช.png" style="width: 286px;height: 394px; transition:0.3s;" class="brightStu chv1">
+                </div>
+                <div class="content">
+                    <h5 class="mb-2">BUSINESS COMPUTERS</h5>
+                        <p class="mb-0">สาขาวิชาคอมพิวเตอร์ธุรกิจ</p>
+                        <p class="mb-0">หลักสูตรประกาศนียบัตรวิชาชีพ (ปวช.)</p>
+                        <p class="mb-2">[ ปวช. 3 ปี ]</p>
+                        <a href="Bisines computer.html" class="btn btn-primary" style="position: relative;z-index: 1;">ดูรายละเอียด</a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="card " style="--clr:orangered;">
+                <div class="imgBx">
+                    <img src="https://digit.crru.ac.th/DiGiT2024/uploads/courseimage/C-DMT.webp" alt="">
+                </div>
+                <div style="position: relative;left: 20px;top: -106px;background-image:url(); width:286px; height:394px;z-index: 1;">
+                    <img src="img/com c3.png" style="width: 286px;height: 394px; transition:0.3s;" class="brightStu chv2">
+                </div>
+                <div class="content">
+                    <h5 class="mb-2">DIGITAL TECHNOLOGY</h5>
+                    <p class="mb-0">สาขาวิชาเทคโนโลยีดิจิทัล</p>
+                    <p class="mb-0">หลักสูตรประกาศนียบัตรวิชาชีพ (ปวช.)</p>
+                    <p class="mb-3">[ ปวช. 3 ปี ]</p>
+                    <a href="Digital.html" class="btn btn-primary" style="position: relative;z-index: 1;">ดูรายละเอียด</a>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <div class="card " style="--clr:orangered;">
+                <div class="imgBx">
+                    <img src="https://digit.crru.ac.th/DiGiT2024/uploads/courseimage/C-IT.webp" alt="">
+                </div>
+                <div style="position: relative;left: 20px;top: -100px;background-image:url(); width:286px; height:394px;z-index: 1;">
+                    <img src="img/com.png" style="width: 280px;height: 394px; transition:0.3s;" class="brightStu chv3">
+                </div>
+                <div class="content">
+                    <h5 class="mb-2">INFORMATION TECHNOLOGY</h5>
+                    <p class="mb-0">สาขาวิชาเทคโนโลยีสารสนเทศ</p>
+                    <p class="mb-0">หลักสูตรประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</p>
+                    <p class="mb-2">[ ปวส. 2ปี ]</p>
+                    <a href="infomasion IT.html" class="btn btn-primary" style="position: relative;z-index: 1;">ดูรายละเอียด</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- ส่วนข่าวสาร -->
+ <div class="news-section">
+    <div class="effex">
+        <div class="oval-shape">
+            <p style="color: azure;">ข่าวสาร</p>
+        </div>
+    </div>
+    <div class="news-content">
+        <h2>ข่าวประชาสัมพันธ์ทั่วไป</h2>
+        <div class="grid-container">
+            <div class="featured-article">
+                <img src="https://scontent.fbkk5-3.fna.fbcdn.net/v/t39.30808-6/451127420_1080328940758941_3476100815811554977_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEacREmFjGt_SrB2dkjtil2HPZRZmKg6CAc9lFmYqDoIJkNe6c27qrwklDAXWI-O6Kt5f-bkjG05rYCfWhtSSv9&_nc_ohc=B5ChhFMihz4Q7kNvgFy4USV&_nc_ht=scontent.fbkk5-3.fna&oh=00_AYDyU3pTQbRiZUll4aNi-063QedXB_-uainmwCkJlxA2_A&oe=66BE128C" alt="Featured News">
+                <h3>ว่าที่ร้อยตรีสมฤทธิ์ ไกลถิ่น ผู้อำนวยการวิทยาลัยเทคนิคเทิง เข้าร่วมการประเมินการดำเนินงานศูนย์บ่มเพาะผู้ประกอบการอาชีวศึกษา ระดับภาคเหนือ กลุ่มที่ 2 (เชียงราย พะเยา แพร่และน่าน) ประจำปีงบประมาณ 2567 ในระหว่างวันที่ 7-9 สิงหาคม 2567 และวิทยาลัยเทคนิคเทิง ได้เข้าร่วมการประเมิน พร้อมคณะครู นักเรียน นักศึกษา ณ วิทยาลัยเทคนิคพะเยา</h3>
+                <p>รายละเอียด: ระหว่างวันที่ 7-9 สิงหาคม 2567...</p>
+            </div>
+            <div class="article-list">
+                <div class="article-item">
+                    <img src="https://scontent.fbkk5-6.fna.fbcdn.net/v/t39.30808-6/454895058_1080300214095147_9007494398700986921_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHbRoz7IFRiyiUNtj2UEUr8sADLM0OwhQGwAMszQ7CFAWTIvNg22X5j4E4QHPUQpzsKwUqjGXPiAQdRvLTCwXTt&_nc_ohc=pR7TCaQKhjYQ7kNvgHcQrx9&_nc_ht=scontent.fbkk5-6.fna&oh=00_AYCCDfA_W_gYgTvSK-vTf43GDyXDTmAQLTkY5bUdY6xRjw&oe=66BE1E36" alt="News Image">
+                    <h4>กวันศุกร์ ที่ 9 สิงหาคม 2567 วิทยาลัยเทคนิคเทิงเทิงพร้อมด้วยคณะผู้บริหาร คณะครู นักเรียน นักศึกษา เข้าร่วมงานโครงการพิเศษและบริการชุมชน โดยวิทยาลัยเทคนิคเทิง ร่วมออกให้บริการชาวบ้าน ตามโครงการอำเภอยิ้มเคลื่อนที่ บริการซ่อมเครื่องใช้ไฟฟ้า อุปกรณ์อิเล็กทรอนิกส์ เครื่องยนต์ การเกษตร รถจักรยานยนต์(บริการฟรี) ณ โรงเรียนบ้านรักแผ่นดิน ตำบลตับเต่า อำเภอเทิง จังหวัดเชียงราย</h4>
+                    <p>รายละเอียด: วันศุกร์ ที่ 9 สิงหาคม 2567...</p>
+                </div>
+                <div class="article-item">
+                    <img src="https://scontent.fbkk5-6.fna.fbcdn.net/v/t39.30808-6/453187141_1073043004820868_4041561490828624718_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGxmvdMRxGdliGZLfBDGIwAv8cHkHt_rMu_xweQe3-sy58syGLx8N_dawJ-v1yBvoFEWG1UsP9UR2lrSDxaqSzt&_nc_ohc=UyNjk0nWeGsQ7kNvgE9Bla-&_nc_ht=scontent.fbkk5-6.fna&oh=00_AYBkwH33MxtzINQjyKTtc3_rAATTddF3HFOe_tdeoiffoA&oe=66BE423B" alt="News Image">
+                    <h4>วันที่ 29 - 30 กรกรฎาคม 2567 ว่าที่ร้อยตรีสมฤทธิ์  ไกลถิ่น ผู้อำนวยการวิทยาลัยเทคนิคเทิง มอบหมายให้ นางอัญชลี  เวียงคำ ตำแหน่ง ครู คศ.2 และ ว่าที่ร้อยตรีหญิงพิไลพร  มหาวงศนันท์ ตำแหน่ง ครูพิเศษสอน นำนักเรียน นักศึกษาเข้าร่วมโครงการยกระดับ และพัฒนาขีดความสามารถทางด้านภาษา และทักษะดิจิทัลเพื่อพัฒนากำลังคนให้มีสมรรถนะสูง สอดรับกับมาตรฐานสากล ประจำปีการศึกษา 2567 ณ วิทยาลัยอาชีวศึกษาเชียงราย</h4>
+                    <p>รายละเอียด: ระหว่างวันที่ 29-30 กรกรฎาคม  2567 ...</p>
+                </div>
+                <!-- Add more articles as needed -->
+            </div>
+        </div>
+    </div>
+    <div class="view-all">
+        <a href="ข่าวสาร.html">ข่าวทั้งหมด</a>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const speechBubble = document.querySelector('.oval-shape p');
+        speechBubble.textContent = 'ข่าวสาร';
+    });
+</script>
+
+
+
+
+<!-- นักเรียนทั้งหมด -->
+
+  
+<div class="sutdu-container">
+    <div class="gridsss-item">
+        <img src="img/uuser.png" alt="Image 1" class="circle-image">
+        <h1 class="counter" data-target="1116" style="color: #f4af00;">0 คน</h1>
+        <p style="color: white;">ผู้เรียนทั้งหมด (ข้อมูล ณ  24-7-2567)</p>
+    </div>
+    <div class="gridsss-item">
+        <img src="img/uuser.png" alt="Image 1" class="circle-image">
+        <h1 class="counter" data-target="728" style="color: #f4af00;">0 คน</h1>
+        <p style="color: white;">ระดับ ปวช. (ข้อมูล ณ  24-7-2567)</p>
+    </div>
+    <div class="gridsss-item">
+        <img src="img/uuser.png" alt="Image 1" class="circle-image">
+        <h1 class="counter" data-target="388" style="color: #f4af00;">0 คน</h1>
+        <p style="color: white;">ระดับ ปวส. (ข้อมูล ณ  24-7-2567)</p>
+    </div>
+    <div class="gridsss-item">
+        <img src="img/uuser.png" alt="Image 1" class="circle-image">
+        <h1 class="counter" data-target="78" style="color: #f4af00;">0 คน</h1>
+        <p style="color: white;">บุคลากร (ข้อมูล ณ 24-7-2567)</p>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const counters = document.querySelectorAll('.counter');
+        counters.forEach(counter => {
+            counter.innerText = '0 คน';
+            const updateCounter = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText.replace(' คน', '');
+                const increment = target / 200; // ปรับความเร็วในการนับได้ที่นี่
+                if (count < target) {
+                    counter.innerText = `${Math.ceil(count + increment)} คน`;
+                    setTimeout(updateCounter, 20);
+                } else {
+                    counter.innerText = `${target} คน`;
+                }
+            };
+            updateCounter();
+        });
+    });
+</script>
+
+
+<!-- ปุ่มกลับมาบนสุด -->
+<a href="#" class="back-to-top" id="back-to-top">top
+</a>
+
+<script>
+    // JavaScript to handle scroll event and show/hide the button
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTopButton = document.getElementById('back-to-top');
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) { // Show button after scrolling 300px
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+
+    backToTopButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
+
+</script>
+    
+<div class="parallax1">
+    <h1>แผนกเทคโนโลยีสารสนเทศ วิทยาลัยเทคนิคเทิง</h1>
+</div>
+
+ <!-- ส่วนท้าย -->
+
+ <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>เกี่ยวกับเรา</h4>
+                <ul>
+                    <li><a href="index.html">หน้าหลัก</a></li>
+                    <li><a href="บุคลากร.html">บุคลากร</a></li>
+                    <li><a href="ติดต่อเรา.html">ติดต่อเรา</a></li>
+                    <li><a href="ข่าวสาร.html">ข่าวสาร</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>หลักสูตร</h4>
+                <ul>
+                    <li><a href="Bisines computer.html">หลักสูตรคอมพิวเตอร์ธุรกิจ</a></li>
+                    <li><a href="Digital.html">หลักสูตรเทคโนโลยีดิจิทัล</a></li>
+                    <li><a href="infomasion IT.html">หลักสูตรเทคโนโลยีสสารสนเทศ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>เว็บในเครือเดียวกัน</h4>
+                <ul>
+                    <li><a href="http://technicalthoeng.ac.th/index01.html">วิทยาลัยเทคนิคเทิง</a></li>
+                    <li><a href="https://std2018.vec.go.th/web/Index.htm?mode=index">สท.02</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/BCthoeng"><i class="fab fa-facebook-f"></i></a> <!-- Facebook logo -->
+                    <a href="#"><i class="fas fa-envelope"></i></a> <!-- Email logo -->
+                    <a href="#"><i class="fab fa-line"></i></a> <!-- LINE logo -->
+                </div>
+            </div>
+            
+    <div class="tage">
+        <p>Copyright 2023 by Thoeng Technical College | All rights reserved</p>
+    </div>
+</footer>
+</body>
+</html>
+
+</body>
+</html>
+
+

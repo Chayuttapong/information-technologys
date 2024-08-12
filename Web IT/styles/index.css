@@ -1,0 +1,708 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+
+
+/* navbar */
+nav {
+    background: #430f74;
+    position: relative;
+    z-index: 2;
+    position: sticky;
+    top: 0;
+
+}
+
+nav::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo {
+    width: 40%;
+    float: left;
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+nav .logo .logo-img {
+    height: 50px; /* ปรับขนาดโลโก้ตามต้องการ */
+    margin-right: 15px;
+    padding-left: 20%;
+}
+
+nav .logo .logo-text h2,
+nav .logo .logo-text h3 {
+    color: white;
+    margin: 0;
+}
+@media (min-width: 1584px) {
+    nav .logo .logo-text h1 {
+        display: none;
+    }
+}
+@media (max-width: 1584px) {
+    nav .logo .logo-text h2,
+    nav .logo .logo-text h3 {
+        display: none;
+    }
+}
+
+nav .logo .logo-text h1 a{
+    color: #8E8BA3;
+    text-decoration: none;
+}
+nav .logo .logo-text h1 a:hover{
+    color: #f2f2f2;
+}
+nav .logo .logo-text h2 {
+    color: #8E8BA3;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 24px;
+}
+
+nav .logo .logo-text h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+}
+
+.menu-toggle {
+    display: none;
+    float: right;
+    font-size: 24px;
+    color: white;
+    line-height: 70px;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+    margin-right: 15%;
+}
+
+nav ul li {
+    float: left;
+    display: inline-block;
+    background: #430f74;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #8E8BA3;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+    position: relative; /* ต้องการสำหรับตำแหน่งของลูกเล่น */
+    transition: color 0.3s ease, border-bottom 0.3s ease, transform 0.3s ease;
+}
+
+
+/* เปลี่ยนแปลงเมื่อ hover */
+nav ul li a:hover {
+    color: #fff; /* สีของข้อความ */
+    border-bottom: 2px solid #6E22B7; /* เส้นขอบด้านล่าง */
+    transform: translateY(-3px); /* ยกขึ้นเล็กน้อย */
+}
+
+/* สไตล์เส้นขอบที่ปรากฏได้ดีขึ้น */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #872AF2;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+/* เปลี่ยนแปลงเมื่อ hover */
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+
+
+
+nav ul li ul li a {
+    font-size: 15px;
+}
+
+nav ul ul {
+    width: 400px;
+    position: absolute;
+    top: 90px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+
+nav ul ul ul {
+    border-top: none;
+}
+
+nav ul li:hover > ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li {
+    position: relative;
+    margin: 0px;
+    width: 70%;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul ul li a {
+    padding: 10px 15px;
+    line-height: 50px;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+
+/* CSS สำหรับ Hamburger Menu */
+@media (max-width: 1488px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        float: none;
+        clear: both;
+        position: static;
+        width: 100%;
+        display: none;
+    }
+
+    nav ul.show {
+        display: block;
+    }
+
+    nav ul li {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul {
+        position: static;
+        display: none;
+    }
+
+    nav ul li:hover > ul {
+        display: block;
+    }
+}
+
+
+/* 3Dmodel */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+.contents {
+    max-width: 50%;
+    margin-left: 10%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.highlight {
+    color: #f4af00;
+}
+
+p {
+    font-size: 1.25rem;
+    margin: 20px 0;
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* จัดปุ่มให้อยู่ตรงกลาง */
+}
+
+.button {
+    text-decoration: none;
+    padding: 10px 30px; /* เพิ่มขนาด padding ให้ใหญ่ขึ้นเล็กน้อย */
+    border-radius: 25px; /* มุมโค้งมนเล็กน้อย */
+    margin-right: 10px;
+    font-size: 1rem;
+    transition: all 0.4s ease; /* เพิ่มความลื่นไหลในการเปลี่ยนแปลง */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงาเบาๆ ให้ปุ่ม */
+    position: relative;
+    overflow: hidden;
+}
+
+.button.primary {
+    background-color: #430f74;
+    color: white;
+}
+
+.button.primary:hover {
+    color: #430f74;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเข้มเมื่อ hover */
+    transform: translateY(-2px); /* ขยับปุ่มขึ้นเล็กน้อยเมื่อ hover */
+}
+
+.button.secondary {
+    background-color: transparent;
+    border: 1px solid #430f74;
+    color: #430f74;
+}
+
+.button.secondary:hover {
+    background-color: #430f74;
+    color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเข้มเมื่อ hover */
+    transform: translateY(-2px); /* ขยับปุ่มขึ้นเล็กน้อยเมื่อ hover */
+    border: none; /* ลบกรอบออกเมื่อ hover */
+}
+
+
+.image-container {
+    width: 500px;
+    max-width: 100%; 
+    position: relative;
+    transform: translateX(-200px); /* ขยับรูปไปทางซ้าย 20px */
+    z-index: 1;
+}
+
+spline-viewer {
+    width: 100%;
+    height: 600px; 
+    border-radius: 20px;
+}
+/* สำหรับจอที่มีความกว้างไม่เกิน 1200px */
+@media (max-width: 1200px) {
+    .image-container {
+        max-width: 100%;
+        transform: translateX(-10px); /* ขยับไปทางซ้ายน้อยลง */
+    }
+
+    spline-viewer {
+        height: 500px;
+    }
+}
+
+/* สำหรับจอที่มีความกว้างไม่เกิน 768px */
+@media (max-width: 768px) {
+    .image-container {
+        max-width: 100%;
+        transform: translateX(0); /* กลับไปที่ตำแหน่งปกติ */
+    }
+
+    spline-viewer {
+        height: 400px;
+    }
+}
+
+/* สำหรับจอที่มีความกว้างไม่เกิน 480px */
+@media (max-width: 480px) {
+    .image-container {
+        max-width: 100%;
+        transform: translateX(0); /* กลับไปที่ตำแหน่งปกติ */
+    }
+
+    spline-viewer {
+        height: 300px;
+    }
+}
+/* Media queries for responsive design */
+@media (max-width: 1200px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .content, .image-container {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    spline-viewer {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    spline-viewer {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    spline-viewer {
+        height: 250px;
+    }
+}
+
+
+
+/* เมนูย่อย */
+.heder {
+    background-color: #430F74;
+    text-align: center;
+    margin-top: 5px;
+    padding: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content h1 {
+    color: #f4af00;
+    margin: 0;
+}
+
+.header-content p {
+    color: #8E8BA3;
+    margin: 5px 0 0 0;
+    font-size: 25px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.menu-item {
+    background-color: #ffffff;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-20px);
+}
+
+.menu-item:hover h2 {
+    color: #8E8BA3; /* เปลี่ยนสีของข้อความเป็นสีเทาเมื่อโฮเวอร์ */
+}
+
+.menu-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.menu-item h2 {
+    color: #430F74;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.menu-item p {
+    color: #757575;
+    font-size: 15px;
+}
+
+
+
+
+/* ส่วนข่าวสาร */
+
+.news-section {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 80%;
+    margin: 0 auto; /* Centers the section horizontally */
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+    display: flex; /* Use Flexbox to align child elements */
+    flex-direction: column; /* Stack child elements vertically */
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.effex {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: center;
+    margin-bottom: 20px; /* Space between news and oval shape */
+}
+
+.oval-shape {
+    background: #FFCC00;
+    border-radius: 50px; /* Makes the shape oval */
+    padding: 2px 10px; /* Adjusted padding to make the shape more oval */
+    display: inline-block;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em;
+    animation: bounce 2s infinite;
+    text-align: center;
+}
+
+.news-content {
+    flex: 1; /* Takes up the remaining space */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+/* Other CSS remains the same */
+
+
+.featured-article,
+.article-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s ease, transform 0.5s ease; /* ทำให้การเปลี่ยนแปลงมีความสมูท */
+}
+
+.featured-article:hover,
+.article-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* ขยับปุ่มขึ้นเล็กน้อยเมื่อ hover */
+}
+
+.featured-article img,
+.article-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.news-section h2 {
+    color: #FFCC00;
+    text-align: center; /* Centers the heading */
+}
+.featured-article h3{
+    color: #333;
+    font-size: 15px;
+}
+.article-item h4 {
+    color: #333;
+    font-size: 15px;
+}
+.featured-article p{
+    color: #666;
+    font-size: 15px;
+}
+.article-item p {
+    color: #666;
+    font-size: 15px;
+}
+
+/* Updated .view-all styles with proper centering */
+.view-all {
+    text-align: center; /* Ensures the button is centered */
+    margin-top: 50px;
+}
+
+.view-all a {
+    background-color: #FFCC00;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block; /* Allows it to be centered within .view-all */
+}
+
+
+.view-all a:focus,
+.view-all a:active {
+    outline: none;
+    border: none;
+}
+
+.view-all a:hover {
+    background-color: #430F74;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-article,
+    .article-list {
+        margin-bottom: 20px;
+    }
+
+    .article-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 10px;
+    }
+
+    .view-all {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .article-item {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* ข้อมูลนักเรียน */
+.sutdu-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 คอลัมน์ในแถวเดียว */
+    grid-template-rows: auto; /* ความสูงของแถวจะปรับตามเนื้อหา */
+    gap: 0%; /* ช่องว่างระหว่างช่องต่างๆ */
+    padding: 20px;
+    background-color: #430F74;
+}
+
+.gridsss-item {
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: rgba(249, 249, 249, 0.0); /* สีพื้นหลังโปร่งใส */
+}
+
+.circle-image {
+    border: 1px solid rgb(185, 185, 185);
+    width: 100px; /* ขนาดของรูปภาพ */
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.7s ease;
+}
+
+.circle-image:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    background-color: rgba(249, 249, 249, 0.5);
+    transition: transform 0.7s ease;
+}
+
+@media (max-width: 1024px) {
+    .sutdu-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .sutdu-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ปุ่มกลับมาบนสุด */
+
+/* Styles for Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #8E8BA3; /* Dark Red */
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #f4af00; /* Light Pink */
+}
+
+
+
+
+.parallax1 {
+    /* ใส่ URL ของภาพที่ต้องการใช้ */ 
+    background-image: url("https://scontent.fbkk5-5.fna.fbcdn.net/v/t39.30808-6/448138104_1038893111569191_1463133193269381912_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFxwY-7o1S1j_HAKoquUVxIRFeJNKmUnsFEV4k0qZSewd2AqxHJHqwCCSXIZJkoQlwu1eNlrR9F_wfSILely4Xt&_nc_ohc=natU7sWgi1cQ7kNvgHqb1O9&_nc_ht=scontent.fbkk5-5.fna&oh=00_AYBCw-VPJF5JARNRsMIl2gQFNyCSYk0ceqrOyDX-5ix1xQ&oe=66BD4938");
+    height: 400px; /* ความสูงของ parallax section */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1; /* ลำดับชั้นต่ำกว่า content */
+}
+
+.parallax1 h1{
+    text-align: center;
+    justify-content: center;
+    padding-top: 150px;
+    color: #f2f2f2;
+}
+
+
+
+

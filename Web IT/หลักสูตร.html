@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หลักสูตร</title>
+    <link rel="icon" href="img/nnnnnn.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/bortsrp.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="logo">
+            <img src="img/nnnnnn.png" alt="Logo" class="logo-img">
+            <div class="logo-text">
+                <h2>เทคโนโลยีสารสนเทศ</h2>
+                <h1> <a href="#">IT</a></h1>
+                <h3>Information Technology </h3>
+            </div>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul id="menu">
+          <li><a href="index.html">หน้าหลัก</a></li>
+          <li>
+            <a href="หลักสูตร.html">หลักสูตร</a>
+            <ul>
+                <li><a href="Digital.html">หลักสูตรเทคโนโลยีดิจิทัล</a></li>
+                <li><a href="Bisines computer.html">หลักสูตรคอมพิวเตอร์ธุรกิจ</a></li>
+                <li><a href="infomasion IT.html">หลักสูตรเทคโนโลยีสสารสนเทศ</a></li>
+                 
+            </ul>
+        </li>
+          <li><a href="บุคลากร.html">บุคลากร</a></li>
+          <li><a href="ข่าวสาร.html">ข่าวสาร</a></li>
+          <li>
+            <a href="#">เกี่ยวกับเรา</a>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=sLkXaR4uxLA">เพลงประจำวิทยาลัย</a></li>
+                <li><a href="ติดต่อเรา.html">ติดต่อเรา</a></li>
+            </ul>
+        </li>
+        </ul>
+    </nav>
+
+
+
+<script>
+    // script.js
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.getElementById('menuToggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', function () {
+            menu.classList.toggle('show');
+        });
+    });
+</script>
+
+
+
+    <!-- หลักสูตรที่เปิดสอน bootstarp -->
+<div class="containerc p-0 mb-5 text-center">
+    <div class="container text-center">
+        <h1 class="text-primary">หลักสูตรที่เปิดสอน</h1>
+    </div>
+
+    <div class="containerc mb-3">
+        <div>
+            <div class="card " style="--clr:gray;">
+                <div class="imgBx bgcourse">
+                    <img src="https://digit.crru.ac.th/DiGiT2024/uploads/courseimage/C-DTB.webp" style="filter: hue-rotate(155deg);" alt="">
+                </div>
+                <div style="position: relative;left: 20px;top: -106px;z-index: 1;">
+                    <!-- <div style="position: fixed;width: 286px;height: 394px;background:red;z-index: 1;"></div> -->
+                    <img src="img/บช.png" style="width: 286px;height: 394px; transition:0.3s;" class="brightStu chv1">
+                </div>
+                <div class="content">
+                    <h5 class="mb-2">BUSINESS COMPUTERS</h5>
+                        <p class="mb-0">สาขาวิชาคอมพิวเตอร์ธุรกิจ</p>
+                        <p class="mb-0">หลักสูตรประกาศนียบัตรวิชาชีพ (ปวช.)</p>
+                        <p class="mb-2">[ ปวช. 3 ปี ]</p>
+                        <a href="Bisines computer.html" class="btn btn-primary" style="position: relative;z-index: 1;">ดูรายละเอียด</a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="card " style="--clr:orangered;">
+                <div class="imgBx">
+                    <img src="https://digit.crru.ac.th/DiGiT2024/uploads/courseimage/C-DMT.webp" alt="">
+                </div>
+                <div style="position: relative;left: 20px;top: -106px;background-image:url(); width:286px; height:394px;z-index: 1;">
+                    <img src="img/com c3.png" style="width: 286px;height: 394px; transition:0.3s;" class="brightStu chv2">
+                </div>
+                <div class="content">
+                    <h5 class="mb-2">DIGITAL TECHNOLOGY</h5>
+                    <p class="mb-0">สาขาวิชาเทคโนโลยีดิจิทัล</p>
+                    <p class="mb-0">หลักสูตรประกาศนียบัตรวิชาชีพ (ปวช.)</p>
+                    <p class="mb-3">[ ปวช. 3 ปี ]</p>
+                    <a href="Digital.html" class="btn btn-primary" style="position: relative;z-index: 1;">ดูรายละเอียด</a>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <div class="card " style="--clr:orangered;">
+                <div class="imgBx">
+                    <img src="https://digit.crru.ac.th/DiGiT2024/uploads/courseimage/C-IT.webp" alt="">
+                </div>
+                <div style="position: relative;left: 20px;top: -100px;background-image:url(); width:286px; height:394px;z-index: 1;">
+                    <img src="img/com.png" style="width: 280px;height: 394px; transition:0.3s;" class="brightStu chv3">
+                </div>
+                <div class="content">
+                    <h5 class="mb-2">INFORMATION TECHNOLOGY</h5>
+                    <p class="mb-0">สาขาวิชาเทคโนโลยีสารสนเทศ</p>
+                    <p class="mb-0">หลักสูตรประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</p>
+                    <p class="mb-2">[ ปวส. 2ปี ]</p>
+                    <a href="infomasion IT.html" class="btn btn-primary" style="position: relative;z-index: 1;">ดูรายละเอียด</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ <!-- ส่วนท้าย -->
+
+ <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>เกี่ยวกับเรา</h4>
+                <ul>
+                    <li><a href="index.html">หน้าหลัก</a></li>
+                    <li><a href="บุคลากร.html">บุคลากร</a></li>
+                    <li><a href="ติดต่อเรา.html">ติดต่อเรา</a></li>
+                    <li><a href="ข่าวสาร.html">ข่าวสาร</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>หลักสูตร</h4>
+                <ul>
+                    <li><a href="Bisines computer.html">หลักสูตรคอมพิวเตอร์ธุรกิจ</a></li>
+                    <li><a href="Digital.html">หลักสูตรเทคโนโลยีดิจิทัล</a></li>
+                    <li><a href="infomasion IT.html">หลักสูตรเทคโนโลยีสสารสนเทศ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>เว็บในเครือเดียวกัน</h4>
+                <ul>
+                    <li><a href="http://technicalthoeng.ac.th/index01.html">วิทยาลัยเทคนิคเทิง</a></li>
+                    <li><a href="https://std2018.vec.go.th/web/Index.htm?mode=index">สท.02</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/BCthoeng"><i class="fab fa-facebook-f"></i></a> <!-- Facebook logo -->
+                    <a href="#"><i class="fas fa-envelope"></i></a> <!-- Email logo -->
+                    <a href="#"><i class="fab fa-line"></i></a> <!-- LINE logo -->
+                </div>
+            </div>
+            
+    <div class="tage">
+        <p>Copyright 2023 by Thoeng Technical College | All rights reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>

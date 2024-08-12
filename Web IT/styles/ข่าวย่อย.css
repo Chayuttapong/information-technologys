@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.hed {
+    text-align: center;
+    padding: 20px;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.hed h1 {
+    text-align: start;
+    margin: 0;
+    font-size: 2em;
+    color: #f4af00;
+}
+
+.hed h2 {
+    color: #7e7e7e;
+    text-align: start;
+    margin: 0;
+    border-bottom: 1px dotted #555555;
+}
+
+.txte{
+    text-align: start;
+    padding: 20px;
+    width: 65%;
+    margin: 0 auto;
+}
+
+/* กำหนดเลย์เอาท์แบบกริดสำหรับข่าว */
+.news-grid {
+    width: 65%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* สร้าง 5 คอลัมน์ */
+    grid-template-rows: repeat(2, 1fr); /* สร้าง 2 แถว */
+    gap: 10px; /* ช่องว่างระหว่างแต่ละรายการ */
+
+}
+
+.news-item img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover; /* ปรับขนาดรูปภาพตามกรอบ */
+    border-radius: 20px;
+}
+
+/* สไตล์ของโมดอล */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 60px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* ปุ่มปิด */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* สไตล์ปุ่มปิด */
+.close-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.close-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Media Queries สำหรับหน้าจอขนาดต่างๆ */
+
+/* หน้าจอกว้าง 1024px หรือน้อยกว่า: เปลี่ยนเป็น 4 คอลัมน์ */
+@media (max-width: 1024px) {
+    .news-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 คอลัมน์ */
+    }
+}
+
+/* หน้าจอกว้าง 768px หรือน้อยกว่า: เปลี่ยนเป็น 2 คอลัมน์ */
+@media (max-width: 768px) {
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 คอลัมน์ */
+        grid-template-rows: auto; /* แถวปรับอัตโนมัติ */
+    }
+}
+
+/* หน้าจอกว้าง 480px หรือน้อยกว่า: เปลี่ยนเป็น 1 คอลัมน์ */
+@media (max-width: 480px) {
+    .news-grid {
+        grid-template-columns: 1fr; /* 1 คอลัมน์ */
+        grid-template-rows: auto; /* แถวปรับอัตโนมัติ */
+    }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>บุคลากร</title>
+    <link rel="icon" href="img/nnnnnn.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/บุคลากร.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+<!-- navbar -->
+<nav>
+  <div class="logo">
+      <img src="img/nnnnnn.png" alt="Logo" class="logo-img">
+      <div class="logo-text">
+          <h2>เทคโนโลยีสารสนเทศ</h2>
+          <h1> <a href="#">IT</a></h1>
+          <h3>Information Technology </h3>
+      </div>
+  </div>
+  <div class="menu-toggle" id="menuToggle">
+      <i class="fas fa-bars"></i>
+  </div>
+  <ul id="menu">
+    <li><a href="index.html">หน้าหลัก</a></li>
+    <li>
+      <a href="หลักสูตร.html">หลักสูตร</a>
+      <ul>
+        <li><a href="Digital.html">หลักสูตรเทคโนโลยีดิจิทัล</a></li>
+        <li><a href="Bisines computer.html">หลักสูตรคอมพิวเตอร์ธุรกิจ</a></li>
+        <li><a href="infomasion IT.html">หลักสูตรเทคโนโลยีสสารสนเทศ</a></li>
+           
+      </ul>
+  </li>
+    <li><a href="บุคลากร.html">บุคลากร</a></li>
+    <li><a href="ข่าวสาร.html">ข่าวสาร</a></li>
+    <li>
+      <a href="#">เกี่ยวกับเรา</a>
+      <ul>
+          <li><a href="https://www.youtube.com/watch?v=sLkXaR4uxLA">เพลงประจำวิทยาลัย</a></li>
+          <li><a href="ติดต่อเรา.html">ติดต่อเรา</a></li>
+      </ul>
+  </li>
+  </ul>
+</nav>
+
+
+
+<script>
+// script.js
+document.addEventListener('DOMContentLoaded', function () {
+  const menuToggle = document.getElementById('menuToggle');
+  const menu = document.getElementById('menu');
+
+  menuToggle.addEventListener('click', function () {
+      menu.classList.toggle('show');
+  });
+});
+</script>
+
+
+
+
+<div class="User">
+    <h1 class="US">บุคลากร แผนกวิชาเทคโนโลยีสารสนเทศ</h1>
+    <h2> Department of Information Technology</h2>
+</div>
+    <!-- ส่วนรูปครุ -->
+     <div class="posone">
+      <section class="slider-container">
+        <div class="slider-images">
+          <div class="slider-img">
+            <img src="img/นางสาวจันทร์จิรา สมบุตร.jpg" alt="1" />
+            <h1>Soifa</h1>
+            <div class="details">
+              <h2>Soifa</h2>
+              <p>Chanjira Sombut</p>
+            </div>
+          </div>
+          <div class="slider-img">
+            <img src="img/นางส่าวสุภารัตน์ วงศ์สกุลจิตร.jpg" alt="2" />
+            <h1>Timm</h1>
+            <div class="details">
+              <h2>Timm</h2>
+              <p>Suparat Wongsakuljit</p>
+            </div>
+          </div>
+          <div class="slider-img active">
+            <img src="img/นายสมบุญ แชมื่อ.jpg" alt="4" />
+            <h1>Ansu</h1>
+            <div class="details">
+              <h2>Ansu</h2>
+              <p>Somboon Cham</p>
+            </div>
+          </div>
+          <div class="slider-img">
+            <img src="img/นายพงษ์พันธ์ กาจินะ หัวหน้าแผนก.jpg" alt="3" />
+            <h1>Tong</h1>
+            <div class="details">
+              <h2>Tong</h2>
+              <p>Pongphan Gachina</p>
+            </div>
+          </div>
+      </section>
+      <script src="js/jQuery.js"></script>
+      <script>
+        jQuery(document).ready(function ($) {
+          $(".slider-img").on("click", function () {
+            $(".slider-img").removeClass("active");
+            $(this).addClass("active");
+          });
+        });
+      </script>
+     </div>
+    
+
+ <!-- ส่วนท้าย -->
+
+ <footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col">
+              <h4>เกี่ยวกับเรา</h4>
+              <ul>
+                  <li><a href="index.html">หน้าหลัก</a></li>
+                  <li><a href="บุคลากร.html">บุคลากร</a></li>
+                  <li><a href="ติดต่อเรา.html">ติดต่อเรา</a></li>
+                  <li><a href="ข่าวสาร.html">ข่าวสาร</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>หลักสูตร</h4>
+              <ul>
+                  <li><a href="Bisines computer.html">หลักสูตรคอมพิวเตอร์ธุรกิจ</a></li>
+                  <li><a href="Digital.html">หลักสูตรเทคโนโลยีดิจิทัล</a></li>
+                  <li><a href="infomasion IT.html">หลักสูตรเทคโนโลยีสสารสนเทศ</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>เว็บในเครือเดียวกัน</h4>
+              <ul>
+                  <li><a href="http://technicalthoeng.ac.th/index01.html">วิทยาลัยเทคนิคเทิง</a></li>
+                  <li><a href="https://std2018.vec.go.th/web/Index.htm?mode=index">สท.02</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                  <a href="https://www.facebook.com/BCthoeng"><i class="fab fa-facebook-f"></i></a> <!-- Facebook logo -->
+                  <a href="#"><i class="fas fa-envelope"></i></a> <!-- Email logo -->
+                  <a href="#"><i class="fab fa-line"></i></a> <!-- LINE logo -->
+              </div>
+          </div>
+          
+  <div class="tage">
+      <p>Copyright 2023 by Thoeng Technical College | All rights reserved</p>
+  </div>
+</footer>
+
+  </body>
+</html>
